@@ -1,0 +1,31 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="login-box">
+			<div class="white-box">
+				<h3 class="page-title text-center"><strong>Sign In</strong></h3>
+				<form class="form-horizontal form-material">
+					<div class="form-group">
+						<div class="col-xs-12">
+							<input class="form-control" type="text" placeholder="Username" ng-model="data.username" ng-keypress="enterPressed($event)" id="username"/>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-xs-12">
+							<input class="form-control" type="password" placeholder="Password" ng-model="data.password" ng-keypress="enterPressed($event)"/>
+						</div>
+					</div>
+					<div class="form-group text-center m-t-20">
+						<div class="col-xs-12">
+							<button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light" type="button" ng-disabled="data.username=='' || data.password==''" ng-click="login(data)" ng-keypress="enterPressed($event)">Login</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#username").focus();
+});
+</script>

@@ -1,0 +1,26 @@
+html, .row { 
+	background: url(../images/bg/5.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:100%;
+  	z-index: -1;
+}
+.top-left-part{
+	border-right: none;
+	margin-left: 20px;
+}
+.margin-top-10 {
+	margin-top: 10px;
+}
+.margin-bottom-10 {
+	margin-bottom: 10px;
+}
+.form-horizontal .form-group {
+	margin-bottom: 10px;
+}
+.white-box {
+	padding: 10px;
+	margin-bottom: 10px;
+}

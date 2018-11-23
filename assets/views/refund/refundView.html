@@ -1,0 +1,181 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="">
+			<h3 class="page-title text-center"><strong>Permohonan Refund Tiket</strong></h3>
+			<div class="row">
+				<form class="form-horizontal">					
+					<div class="col-sm-6">
+						<h4 class="page-title text-center"><strong>Info Booking</strong></h4>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Kode Booking</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-qrcode"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.kode_booking" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Tgl. Booking</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-calendar"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.tgl_penjualan" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Rute</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-3" class="btn btn-default"><i class="fa fa-map-marker"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.rute" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Tgl. Berangkat</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-calendar"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.tgl_berangkat" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Layanan</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-car"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.layanan" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Status Booking</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-lightbulb-o"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.status_pesan" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Nama</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-user"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.nama" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Alamat</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-bookmark"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.alamat" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-6">
+						<h4 class="page-title text-center"><strong>Data Pemohon</strong></h4>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Tgl. Pengajuan</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-calendar"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.tgl_pengajuan" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Nama Pemohon</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-user"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.nama_pemohon" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Nomor Identitas</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-credit-card"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.nomor_identitas" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Tarif</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-money"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.tarif" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Refund</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-money"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.refund" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Alasan</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-question"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.alasan" readonly="readonly"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4">Status Refund</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-info"></i></label></div>
+									<select class="form-control" ng-model="data.id_status_refund" ng-disabled="id_peran != 3">
+										<option ng-repeat="p in status" value="{{p.id_status_refund}}" ng-selected="data.id_status_refund == p.id_status_refund">{{p.status_refund}}</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4">Catatan</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label class="btn btn-default"><i class="fa fa-pencil"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.catatan" ng-disabled="id_peran != 3"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4">&nbsp;</label>
+							<div class="col-sm-8 pull-right">
+								<button class="btn btn-sm btn-info" type="button" ng-click="back()">
+									<i class="fa fa-arrow-left"></i> Kembali 
+								</button>
+								<button class="btn btn-sm btn-danger" type="button" ng-click="save(data)" ng-show="id_peran == 3">
+									<i class="fa fa-check"></i> Ubah 
+								</button>
+							</div>
+						</div>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#btnkode").focus();
+});
+</script>

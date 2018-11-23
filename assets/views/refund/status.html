@@ -1,0 +1,186 @@
+<div class="row">
+	<div class="col-md-12">
+		<div class="">
+			<h3 class="page-title text-center"><strong>Cek Status Refund</strong></h3>
+			<div class="row">
+				<form class="form-horizontal">
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left"> Kode Refund : </label>
+							<div class="col-sm-4">
+								<input id="btnkode" type="text" class="form-control" placeholder="Kode Refund" ng-model="kode" ng-keypress="enterPressed($event)"/>
+							</div>
+							<div class="col-sm-4">
+								<button class="btn btn-sm btn-primary" type="button" ng-click="lookup(kode)" ng-disabled="kode == ''">
+									<i class="fa fa-check"></i> Periksa
+								</button>
+								<button class="btn btn-sm btn-primary" type="button" ng-click="clear();">
+									<i class="fa fa-remove"></i> Hapus
+								</button>
+							</div>							
+						</div>
+					</div>
+					<div class="col-sm-3">
+					</div>
+					<div class="col-sm-4" ng-if="data.details.length > 0">						
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Tgl. Booking</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-1" class="btn btn-default"><i class="fa fa-calendar"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.tgl_penjualan"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Tgl. Berangkat</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-calendar"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.tgl_berangkat"/>
+								</div>
+							</div>
+						</div>		
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Tgl. Pengajuan</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-calendar"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.tgl_pengajuan"/>
+								</div>
+							</div>
+						</div>				
+					</div>
+					
+					<div class="col-sm-4" ng-if="data.details.length > 0">
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Rute</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-3" class="btn btn-default"><i class="fa fa-map-marker"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.rute"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Layanan</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-car"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.layanan"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Pemohon</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-user"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.atas_nama"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-sm-4" ng-if="data.details.length > 0">
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Rekening</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-credit-card"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.rekening"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Total Harga</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-money"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.total"/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="control-label col-sm-4 text-left">Total Refund</label>
+							<div class="col-sm-8">
+								<div class="input-group">
+									<div class="input-group-btn"><label for="ig-2" class="btn btn-default"><i class="fa fa-money"></i></label></div>
+									<input type="text" class="form-control" placeholder="" ng-model="data.nominal"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</form>
+				
+			</div>
+			<div class="row" ng-if="data.details.length > 0">
+				<div class="col-sm-12 white-box">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th class="text-center">#</th>
+								<th>Nama</th>
+								<th class="text-center">Kelamin</th>
+								<th class="text-center">Usia</th>
+								<th>Alamat</th>
+								<th class="text-center">No.ID</th>
+								<th class="text-center">Jenis ID</th>
+								<th class="text-center">No.Polisi</th>
+								<th class="text-center">Golongan</th>
+								<th class="text-right">Tarif</th>
+								<th class="text-center">Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="r in data.details">
+								<td class="text-center">{{$index + 1}}</td>
+								<td>{{r.nama}}</td>
+								<td class="text-center">{{r.jenis_kelamin}}</td>
+								<td class="text-center">{{r.usia}}</td>
+								<td>{{r.alamat}}</td>
+								<td class="text-center">{{r.no_identitas}}</td>
+								<td class="text-center">{{r.jenis_identitas}}</td>
+								<td class="text-center">{{r.no_polisi}}</td>
+								<td class="text-center">{{r.golongan}}</td>
+								<td class="text-right">{{r.tarif|number}}</td>
+								<td class="text-center">{{r.status_refund}}</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<div class="">
+			<div class="row">
+				<div class="col-sm-3 text-center">
+					<p ng-show="data.success == true">Kode Booking :</p>
+					<h3 ng-show="data.success == true">{{data.kode_booking}}</h3>
+				</div>
+				<div class="col-sm-5 text-center">
+					<h3>{{booking}}</h3>
+					<img src="assets/images/ditemukan.png" width="64" height="64" ng-show="data.success == true"/> 
+					<h3 ng-show="data.success == true">{{data.message}}</h3>
+					
+					<img src="assets/images/tidak.png" width="72" height="64" ng-show="data.success == false"/> 
+					<h3 ng-show="data.success == false">{{data.message}}</h3>					
+				</div>
+				<div class="col-sm-4 text-center">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	$("#btnkode").focus();
+});
+</script>

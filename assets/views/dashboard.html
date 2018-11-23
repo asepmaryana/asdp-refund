@@ -1,0 +1,79 @@
+<div class="row">
+	<div class="col-sm-12">
+		<div class="white-box">
+			<h2 class="text-center">Dashboard</h2>
+			<div class="col-sm-3">
+				<ul class="col-in">
+					<li>
+						<a href="#/app/refund/list/1"><span class="circle circle-md bg-warning"><i class="ti-announcement"></i></span></a>
+					</li>
+					<li class="col-last">
+						<h3 class="counter text-right m-t-15"><a href="#/app/refund/list/1">{{refund.diajukan}}</a></h3>
+					</li>
+					<li class="col-middle">
+						<h4>Diajukan</h4>
+						<div class="progress">
+							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{refund.diajukan_p}}" aria-valuemin="0" aria-valuemax="100" style="width: {{refund.diajukan_p}}%">
+								<span class="sr-only">{{refund.diajukan_p}}% Complete (success)</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<ul class="col-in">
+					<li>
+						<a href="#/app/refund/list/2"><span class="circle circle-md bg-danger"><i class="ti-close"></i></span></a>
+					</li>
+					<li class="col-last">
+						<h3 class="counter text-right m-t-15"><a href="#/app/refund/list/2">{{refund.ditolak}}</a></h3>
+					</li>
+					<li class="col-middle">
+						<h4>Ditolak</h4>
+						<div class="progress">
+							<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="{{refund.ditolak_p}}" aria-valuemin="0" aria-valuemax="100" style="width: {{refund.ditolak_p}}%">
+								<span class="sr-only">{{refund.ditolak_p}}% Complete (success)</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<ul class="col-in">
+					<li>
+						<a href="#/app/refund/list/3"><span class="circle circle-md bg-success"><i class="ti-check-box"></i></span></a>
+					</li>
+					<li class="col-last">
+						<h3 class="counter text-right m-t-15"><a href="#/app/refund/list/3">{{refund.disetujui}}</a></h3>
+					</li>
+					<li class="col-middle">
+						<h4>Disetujui</h4>
+						<div class="progress">
+							<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="{{refund.disetujui_p}}" aria-valuemin="0" aria-valuemax="100" style="width: {{refund.disetujui_p}}%">
+								<span class="sr-only">{{refund.disetujui_p}}% Complete (success)</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-sm-3">
+				<ul class="col-in">
+					<li>
+						<a href="#/app/refund/list/4"><span class="circle circle-md bg-info"><i class="ti-files"></i></span></a>
+					</li>
+					<li class="col-last">
+						<h3 class="counter text-right m-t-15"><a href="#/app/refund/list/4">{{refund.diproses}}</a></h3>
+					</li>
+					<li class="col-middle">
+						<h4>Diproses</h4>
+						<div class="progress">
+							<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="{{refund.diproses_p}}" aria-valuemin="0" aria-valuemax="100" style="width: {{refund.diproses_p}}%">
+								<span class="sr-only">{{refund.diproses_p}}% Complete (success)</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
